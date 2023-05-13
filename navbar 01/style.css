@@ -134,3 +134,6 @@ header {
     right: 2%;
   }
 }
+@media(max-width:400px){
+.main a{margin-right:5px;margin-left:10px;font-size:1rem}
+}
