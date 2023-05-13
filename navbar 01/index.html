@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navbar</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- logo start -->
+      <a href="#" class="logo"
+        ><i class="ri-home-heart-fill"></i><span>Logo</span></a
+      >
+      <!-- logo end -->
+
+      <!-- menu start -->
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- menu end -->
+
+      <!-- signUp & registre -->
+      <div class="main">
+        <a href="#" class="user"
+          ><i class="ri-account-pin-box-line"></i><span>Sign In</span></a
+        >
+        <a href="#">Register</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+      <!-- signUp & registre -->
+    </header>
+
+    <!-- js -->
+    <script>
+      const menu = document.querySelector("#menu-icon");
+      const nav = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        nav.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
